@@ -332,9 +332,9 @@ Source : https://youtu.be/2GxAElWKaAo
 
 ## Liens utiles
 
-https://caniuse.com/
-https://github.com/h5bp/Front-end-Developer-Interview-Questions
-http://cssnext.io/
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+https://caniuse.com/  
+https://github.com/h5bp/Front-end-Developer-Interview-Questions  
+http://cssnext.io/  
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference  
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element  
 https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
