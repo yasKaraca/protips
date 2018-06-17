@@ -252,6 +252,53 @@ L'élément est positionné par rapport à un parent en position relative s'il e
 }
 ```
 
+### Fixed
+
+L'élément est retiré du flux normal et est positionné par rapport à la fenêtre du navigateur et restera toujours à la même place même si la page défile. Il est possible d'utiliser les propriétés top, right, bottom et left.
+
+```css
+.element {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
+```
+
+### Sticky
+
+Le positionnement adhérent est un mélange de positionnement relatif et de positionnement fixe. L'élément est considéré comme positionné de façon relative, jusqu'à ce qu'un seuil soit franchi. À partir de ce seuil, l'élément est positionné de façon fixe. Par exemple :
+```css
+.element {
+  position: sticky;
+  top: 10px;
+}
+```
+se comportera comme un élément positionné de façon relative jusqu'à ce que le viewport défile au point où l'élément est à moins de 10 pixels du haut. Ensuite, il sera fixé à 10 pixels du haut, jusqu'à ce que le viewport redéfile jusqu'avant ce seuil.
+
+## Font-face
+
+La règle @font-face permet à une page web de charger des polices personnalisées. Une fois ajoutée à la feuille de style,
+la règle indique au navigateur de télécharger la police depuis la où elle est hébergée. La règle @font-face peut être utilisée au niveau global d'une feuille de style et également au sein d'un groupe lié à une règle @ conditionnelle.
+
+```css
+@font-face {
+ font-family: "Roboto";
+ src: url("/fonts/Roboto.woff2") format("woff2"),
+        url("/fonts/Roboto.woff") format("woff");
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+```
+
+## Grid
+
+![](grid1.png)
+![](grid2.png)
+![](grid3.png)
+Source : https://youtu.be/2GxAElWKaAo
+
 ## Liens utiles
 
 https://caniuse.com/
