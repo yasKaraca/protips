@@ -122,13 +122,17 @@ afin de s'afficher.
 
 ## %
 
-Les tailles en pourcentages sont à relative à celle de leur parent.
-L'élément si dessous occupera un quart de la largeur de la page.
+Les tailles en pourcentages sont relatives à celles de leur parent.
+L'élément si dessous occupera la moitié de la largeur de la page.
 
 ```html
 <body>
   <div>
     J'occupe la moitié de la largeur de la page.
+    <div>
+      J'occupe la moitié la moitié de la largeur de ma div parente,
+      soit un quart de la largeur de la page.
+    </div>  
   </div>  
 </body>  
 ```
@@ -181,6 +185,16 @@ html {
 Unités relatives à la taille de votre écran (peu importe le device)
 Attention au VH et à son contenu. 100vh = 100vh quoi qu'il arrive.
 VW très utile pour les interfaces fluides.
+
+## Positionner un élément en CSS
+
+La propriété position définit la façon dont un élément est positionné dans un document.
+Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné.
+
+### Static
+
+Comportement normal (par défaut). L'élément est alors positionné dans le flux avec sa position.
+Les propriétés top, right, bottom, left et z-index ne s'appliquent pas.
 
 ## Liens utiles
 
