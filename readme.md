@@ -292,6 +292,37 @@ body {
 }
 ```
 
+## Animation
+
+Les animations CSS permettent de créer des transitions entre deux états de mise en forme. Une animation est décrite par deux choses : des propriétés propres à l'animation d'une part et un ensemble d'étapes (keyframes) qui indiquent l'état initial, final et éventuellement des états intermédiaires d'autre part.
+
+```css
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+```
+
+## Flexbox
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 ## Grid
 
 ![](grid1.png)
@@ -304,3 +335,6 @@ Source : https://youtu.be/2GxAElWKaAo
 https://caniuse.com/
 https://github.com/h5bp/Front-end-Developer-Interview-Questions
 http://cssnext.io/
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
