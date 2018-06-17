@@ -29,7 +29,7 @@
 </ul>
 ```
 
-Exemple en SCSS : 
+Exemple en SCSS :
 ```css
 
 .mainList {
@@ -121,6 +121,25 @@ afin de s'afficher.
 ## REM, EM, %, VW Sizing
 
 ## %
+
+Les tailles en pourcentages sont à relative à celle de leur parent.
+L'élément si dessous occupera un quart de la largeur de la page.
+
+```html
+<body>
+  <div>
+    J'occupe la moitié de la largeur de la page.
+  </div>  
+</body>  
+```
+```css
+body {
+  width: 100%;
+}
+div {
+  width: 50%;
+}
+```
 
 ## EM
 
