@@ -123,7 +123,7 @@ afin de s'afficher.
 ## %
 
 Les tailles en pourcentages sont relatives à celles de leur parent.
-L'élément si dessous occupera la moitié de la largeur de la page.
+L'élément ci dessous occupera la moitié de la largeur de la page.
 
 ```html
 <body>
@@ -195,6 +195,62 @@ Les propriétés top, right, bottom et left déterminent l'emplacement final de 
 
 Comportement normal (par défaut). L'élément est alors positionné dans le flux avec sa position.
 Les propriétés top, right, bottom, left et z-index ne s'appliquent pas.
+
+### Relative
+
+L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments.
+
+```css
+.element {
+  position: relative;;
+  right: 50px;
+  top: 50px;
+}
+```
+
+### Absolute
+
+L'élément est positionné par rapport à un parent en position relative s'il en a un, sinon par rapport à la fenêtre du navigateur. La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.
+
+#### Cas 1
+
+```html
+<div class="parent">
+  <div class="enfant">
+    Il y a 10px entre le bord droit de ma div parente et mon extrémité droite
+  </div>  
+</div>
+```
+```css
+.parent {
+  position: relative;
+  width: 600px;
+}
+.enfant {
+  position: absolute;
+  right: 10px;
+  width: 200px;
+}
+```
+
+#### Cas 2
+
+```html
+<body>
+  <div class="orphelin">
+    Je suis positionné en bas à droite de la fênetre du navigateur,
+    au scroll vers le bas je ne serai plus positionné tout en bas de la fenêtre mais
+    je resterai aligné à droite
+  </div>  
+</body>   
+```
+```css
+.orphelin {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+```
 
 ## Liens utiles
 
